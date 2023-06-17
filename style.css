@@ -3,3 +3,63 @@
     padding:0;
 }
 
+body{
+  font-family: 'Merriweather', serif;
+  background-color: #fafcff;  
+   
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar__brand{
+    width: 100px;
+}
+ 
+.navbar_logo{
+    width: 100%;
+}
+
+.nav_item{
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    background-image: linear-gradient(to right,#ff512f 0%, #dd2476 51%, #ff512f 100%);
+}
+
+.nav_item:hover {
+    background-position: right center;
+    border: 2px solid #E966A0;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+    .navbar__brand{
+        width: 200px;
+    }
+
+    .nav_item{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px){
+    .navbar__brand{
+        width: 150px;
+    }
+
+    .nav_item{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
